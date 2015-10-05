@@ -21,15 +21,22 @@ var compoundsToLayers = {
 				var currentItem = docRef.layers[initialLayers[i]].pageItems[j];
 				var newLayer = docRef.layers.add();
 
-				// option 1. keep original name
-				newLayer.name = currentItem.name;
-				// option 2. convert the name to lowercase and replace spaces with dashes:
-				// newLayer.name = currentItem.name.replace(/\s/gi, '-').toLowerCase();
+				newLayer.name = compoundsToLayers.cleanString(currentItem.name);
 
 				currentItem.move(newLayer, ElementPlacement.PLACEATBEGINNING);
 			}
 		}
+	},
 
+	cleanString: function(string) {
+		var clean = string;
+
+		// optional: convert the name to lowercase and replace spaces with dashes:
+		clean = clean.replace(/\s/gi, '-').toLowerCase();
+
+		// TODO: Add your own alterations to the original string
+
+		return clean;
 	}
 };
 
