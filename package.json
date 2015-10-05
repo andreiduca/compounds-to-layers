@@ -1,0 +1,20 @@
+{
+  "name": "compounds-to-layers",
+  "version": "1.0.0",
+  "description": "Illustrator script to convert compound shapes to individual layers.",
+  "keywords": [
+    "illustrator",
+    "script",
+    "convert",
+    "compound",
+    "shape",
+    "layer"
+  ],
+  "homepage": "https://github.com/andreiduca/compounds-to-layers#readme",
+  "author": "Andrei Duca <duca.andrei@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreiduca/compounds-to-layers.git"
+  }
+}
